@@ -40,11 +40,22 @@
           return;
         }
 
-        if (request.params.callback) {
+        var callback = request.params.callback;
+        if (callback) {
           response.headers['Content-Type'] = 'text/javascript';
         } else {
           response.headers['Content-Type'] = 'application/json';
         }
+        // TODO: Refactor this.
+        response.sendJSON = function(json) {
+          json = JSON.stringify(json);
+          if (callback) {
+            response.send(`${callback}(${json});`);
+          } else {
+            response.send(json);
+          }
+        };
+
         var handler = this._router.get(request.path);
         handler(response, request);
       });

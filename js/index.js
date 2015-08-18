@@ -4,9 +4,7 @@
 (function() {
   var server = new RestServer();
   server.get('/restroom', function(response, request) {
-    var josn = { floor: 5, rooms: [true, false] };
-    // TODO: Add new methods in response: sendJSON and sendJSONP.
-    response.send(JSON.stringify(josn));
+    response.sendJSON({ floor: 5, rooms: [true, false] });
   });
   server.start();
 
