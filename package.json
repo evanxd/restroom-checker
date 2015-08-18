@@ -1,0 +1,21 @@
+{
+  "name": "people-counter",
+  "version": "0.0.1",
+  "homepage": "https://github.com/evanxd/restroom-checker",
+  "authors": [
+    "Evan Tseng <evan@tseng.io>"
+  ],
+  "description": "An IoT application helps pepole check the availability of restroom.",
+  "keywords": [
+    "arduino",
+    "fxos",
+    "iot",
+    "wot"
+  ],
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "ble-serialport": "0.1.1",
+    "browserify-johnny-five": "0.0.1",
+    "fxos-web-server": "0.0.8"
+  }
+}

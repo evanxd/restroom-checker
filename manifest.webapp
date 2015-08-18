@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "name": "Restroom Checker",
+  "description": "An IoT application helps pepole check the availability of restroom.",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Evan Tseng",
+    "url": "http://evanxd.github.io"
+  },
+  "type": "privileged",
+  "permissions": {
+    "tcp-socket": {}
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en"
+}
