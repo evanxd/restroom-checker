@@ -1,5 +1,5 @@
 {
-  "name": "restroom-checker",
+  "name": "restroom-checker-website",
   "version": "0.0.1",
   "homepage": "https://github.com/evanxd/restroom-checker",
   "authors": [
@@ -14,8 +14,6 @@
   ],
   "license": "Apache License 2.0",
   "dependencies": {
-    "ble-serialport": "0.1.1",
-    "browserify-johnny-five": "0.0.1",
-    "fxos-web-server": "0.0.8"
+    "jquery": "2.1.4"
   }
 }
