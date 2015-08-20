@@ -28,7 +28,7 @@
             this.isAvailable = true;
             console.log('open');
           });
-        }, 15000);
+        }, 10000);
       });
     }
   };
