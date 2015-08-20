@@ -8,7 +8,7 @@
   }
 
   Sensor.prototype = {
-    isAvailable: true,
+    isAvailable: null,
 
     _init: function() {
       var serialPort = new BleSerialPort({ address: this.address });
@@ -19,6 +19,7 @@
           // LED is for notifying user that the board is ready.
           var led = new five.Led(7);
           led.on();
+          this.isAvailable = true;
           var toggleSwitch = new five.Switch(6);
           toggleSwitch.on('close', () => {
             this.isAvailable = false;
