@@ -7,8 +7,9 @@
     "name": "Evan Tseng",
     "url": "http://evanxd.github.io"
   },
-  "type": "privileged",
+  "type": "certified",
   "permissions": {
+    "bluetooth":{},
     "tcp-socket": {}
   },
   "installs_allowed_from": [
