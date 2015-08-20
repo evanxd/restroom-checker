@@ -29,7 +29,7 @@
             this.isAvailable = true;
             console.log('open');
           });
-        }, 10000);
+        }, 15000);
       });
     }
   };
